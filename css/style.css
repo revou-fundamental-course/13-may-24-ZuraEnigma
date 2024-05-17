@@ -1,1 +1,12 @@
 /* Ini CSS */
+
+.section-content {
+    background-color: cornflowerblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.section-content>h3 {
+    margin: 0;
+}
