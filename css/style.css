@@ -10,3 +10,12 @@
 .section-content>h3 {
     margin: 0;
 }
+
+#switch-keliling {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+    background-color: white;
+    color: blue;
+    border: 0px;
+}
