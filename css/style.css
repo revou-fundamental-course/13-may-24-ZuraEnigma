@@ -18,7 +18,7 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    margin: 0%;
+    margin: 10px;
 }
 
 .section-content>h3 {
@@ -33,12 +33,18 @@
     color: blue;
     border: 12px;
     font-weight: bold;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    margin: 0%;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    margin: 0px;
+}
+
+#switch-keliling:hover {
+    background-image: -moz-linear-gradient(180deg, #067054, #3421e3);
+    color: white;
+    cursor: pointer;
 }
 
 .container-image {
@@ -62,4 +68,19 @@ img {
 
 input {
     width: 100%;
+    border-style: solid;
+}
+
+.b-1 {
+    text-align: center;
+    background-color: #574cbf;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.b-2    {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
