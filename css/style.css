@@ -13,6 +13,12 @@
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 0%;
 }
 
 .section-content>h3 {
@@ -23,9 +29,16 @@
     padding-top: 12px;
     padding-bottom: 12px;
     width: 100%;
-    background-color: white;
+    background-color: wheat;
     color: blue;
-    border: 0px;
+    border: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 0%;
 }
 
 .container-image {
@@ -33,6 +46,20 @@
 }
 
 img {
-    width: 350px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
+}
+
+.rumus {
+    text-align: center;
+    font-weight: bold;
+}
+
+.a-2 {
+    text-align: center;
+
+}
+
+input {
+    width: 100%;
 }
