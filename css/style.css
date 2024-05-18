@@ -1,102 +1,106 @@
-/* Ini CSS */
-
-.h1 {
-    text-align: center;
-}
-
-.a-1 {
-    text-align: center;
-}
-
-.section-content {
-    background-color: cornflowerblue;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    margin: 10px;
-}
-
-.section-content>h3 {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
     margin: 0;
-}
-
-#switch-keliling {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="number"] {
     width: 100%;
-    background-color: wheat;
-    color: blue;
-    border: 12px;
-    font-weight: bold;
-    border-radius: 40px;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
-    margin: 0px;
-}
-
-#switch-keliling:hover {
-    background-image: -moz-linear-gradient(180deg, #067054, #3421e3);
-    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
-}
-
-.container-image {
-    text-align: center;
-}
-
-img {
-    width: 300px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .section {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+  }
+  
+  #gambar_persegi {
+    width: 200px;
     height: 200px;
-}
-
-.rumus {
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    border: 2px solid #333;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  #sudut_a,
+  #sudut_b,
+  #sudut_c,
+  #sudut_d {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 255, 255)(255, 255, 255, 0)fff;
+  }
+  
+  #sudut_a {
+    top: 0;
+    left: 0;
+  }
+  
+  #sudut_b {
+    top: 0;
+    right: 0;
+  }
+  
+  #sudut_c {
+    bottom: 0;
+    right: 0;
+  }
+  
+  #sudut_d {
+    bottom: 0;
+    left: 0;
+  }
+  
+  #keterangan {
     text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
     font-weight: bold;
-}
-
-.a-2 {
+  }
+  
+  .rumus {
+    margin-top: 10px;
     text-align: center;
-
-}
-
-input {
-    width: 100%;
-    border-style: solid;
-}
-
-.b-1 {
-    text-align: center;
-    background-color: #574cbf;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-
-.b-2    {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: darkgoldenrod;
-    color: white;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
+  }

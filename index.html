@@ -1,84 +1,50 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zura Calculator</title>
-    <!-- css start -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- css end -->
+  <title>KATIK</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
-    
-    <!-- header start -->
-    <header>
-        <h1 class="h1">Kalkulator Trigonometri</h1>
-        <section>
-            <p class="a-1">Software Engineering Fundamental Course RevoU Calculator Created by Zura (BETA Version)</p>
-        </section>
-    </header>
+  <h1>KATIK</h1>
 
-    <section>
-        <div class="section-content">
-            <h3>Segitiga</h3>
-        </div>
+  <div class="container">
+    <div id="gambar_persegi">
+      <div id="sudut_a">A</div>
+      <div id="sudut_b">B</div>
+      <div id="sudut_c">C</div>
+      <div id="sudut_d">D</div>
+      <div id="keterangan">
+        Bujur Sangkar
+      </div>
+    </div>
 
-        <button type="button" id="switch-keliling">Switch ke Keliling Segitiga</button>
+    <div class="section">
+      <h2>Luas Persegi</h2>
+      <form id="form_persegi">
+        <label for="sisi-luas">Sisi:</label>
+        <input type="number" id="sisi-luas" name="sisi-luas" required>
+        <button type="submit" id="hitung-luas">Hitung Luas</button>
+      </form>
+      <div id="output_luas"></div>
+      <div class="rumus">
+        Rumus: Luas = sisi * sisi
+      </div>
+    </div>
 
-        <section>
-            <section>
-                <div class="section-content">
-                    <h2>Luas Segitiga</h2>
-                </div>
-    
-                <div class="container-image">
-                    <img src="https://cdn-web.ruangguru.com/landing-pages/assets/hs/gambar%20alas%20dan%20tinggi%20segitiga.png">
-                </div>
-    
-                <p>Rumus Luas Segitiga :</p>
-                <p class="rumus">L = 1/2 x a x t</p>
-                <p>Dimana :</p>
-                <P>L = Luas Segitiga (cm2)</P>
-                <p>a = Panjang Alas Segitiga (cm)</p>
-                <p>t = Tinggi Segitiga (cm)</p>
-            </section>
-        </section>
+    <div class="section">
+      <h2>Keliling Persegi</h2>
+      <form id="form_keliling">
+        <label for="sisi-keliling">Sisi:</label>
+        <input type="number" id="sisi-keliling" name="sisi-keliling" required>
+        <button type="submit" id="hitung-keliling">Hitung Keliling</button>
+      </form>
+      <div id="output_keliling"></div>
+      <div class="rumus">
+        Rumus: Keliling = 4 * sisi
+      </div>
+    </div>
+  </div>
 
-        <!-- separation -->
-        <hr />
-        <!-- separation -->
-        <section>
-            <header>
-                <h2 class="a-2">Hitung Luas Segitiga</h2>
-            </header>
-
-            <form>
-                <section>
-                    <div>
-                        <label>a :</label><input/>
-                    </div>
-    
-                    <div>
-                        <label>t :</label><input/>
-                    </div>
-                </section>
-                <p>Diketahui :</p>
-                <p>L = 1/2 x a x t</p>
-                <p>L = 1/2 x ... x ...</p>
-                <p>L = ......</p>
-
-                <center><button type="button" class="b-1">Hitung</button></center>
-                
-                <span style="float: right;">
-                    <button type="button" class="b-2">Reset</button>
-                </span>
-            </form>
-
-            <!-- end form section-->
-        </section>
-    </section>
+  <script src="script.js"></script>
 </body>
-
 </html>
