@@ -1,5 +1,13 @@
 /* Ini CSS */
 
+.h1 {
+    text-align: center;
+}
+
+.a-1 {
+    text-align: center;
+}
+
 .section-content {
     background-color: cornflowerblue;
     padding-top: 10px;
@@ -18,4 +26,13 @@
     background-color: white;
     color: blue;
     border: 0px;
+}
+
+.container-image {
+    text-align: center;
+}
+
+img {
+    width: 350px;
+    height: 250px;
 }
