@@ -7,19 +7,20 @@ body {
 
 header {
     background-color: #5943a4;
-    color: white;
+    color: #ffffff;
     padding: 15px 0;
     text-align: center;
 }
 
 .container {
     display: flex;
+    background-color: rgb(222, 218, 175);
     justify-content: center;
     padding: 20px;
 }
 
 .box {
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -59,7 +60,7 @@ header {
 button {
     background-color: #872166;
     border: none;
-    color: white;
+    color: #ffffff;
     padding: 10px 20px;
     margin: 5px;
     cursor: pointer;
