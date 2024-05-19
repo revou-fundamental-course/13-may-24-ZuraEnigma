@@ -4,28 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TRIGONOMETRI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <!-- Header open -->
+    <!-- Header -->
     <header>
-        <h1 class="main-title">SELAMAT DATANG DI KALKULATOR TRIGONOMETRI</h1>
+        <h1 class="main-title">KALKULATOR TRIGONOMETRI (BETA)</h1>
         <p class="subtitle">Software Engineering Fundamental Course RevoU Calculator, Created by Zura (BETA Version)</p>
     </header>
-    <!-- Header close -->
 
-
-    <!-- Batas Atas -->
+    <!-- Main Container -->
     <div class="container">
         <div class="box">
-            <h1>KALKULATOR TRIGONOMETRI</h1>
-            <div class="">
-
+            <h1>TRIGO-CAL</h1>
+            <div class="luas-segitiga">
+                <h2>LUAS SEGITIGA</h2>
+                <button type="button" class="switch-ks">KELILING SEGITIGA</button>
             </div>
-
+            <div class="container-image">
+                <img src="https://cdn-web.ruangguru.com/landing-pages/assets/hs/gambar%20alas%20dan%20tinggi%20segitiga.png" alt="Segitiga">
+            </div>
+            <p>Rumus Luas Segitiga :</p>
+            <p class="formula"><b>L = 1/2 x a x t</b></p>
+            <details class="Keterangan">
+                <summary>Keterangan :</summary>
+                <li>L : Luas Segitiga (cm<sup>2</sup>)</li>
+                <li>a : Panjang Alas Segitiga (cm)</li>
+                <li>t : Tinggi Segitiga (cm)</li>
+            </details>
+            <hr>
+            <div class="calculation-section">
+                <h2><b>Hitung Luas Segitiga</b></h2>
+                <div class="input-group">
+                    <label for="inputAlas">Alas (a) =</label>
+                    <input type="number" id="inputAlas" name="inputAlas" required/>
+                </div>
+                <div class="input-group">
+                    <label for="inputTinggi">Tinggi (t) =</label>
+                    <input type="number" id="inputTinggi" name="inputTinggi" required/>
+                </div>
+                <p>Diketahui :</p>
+                <p id="rumusLuas">L = 1/2 x a x t</p>
+                <p id="hasilLuas">L = 1/2 x ... x ...</p>
+                <div class="button-group">
+                    <button type="button" class="calculate-button" onclick="hitungLuas()">Hitung</button>
+                    <button type="reset" class="reset-button">Reset</button>
+                </div>
+            </div>
         </div>
-
     </div>
+    <script src="js/script.js"></script>
 </body>
-
 </html>
