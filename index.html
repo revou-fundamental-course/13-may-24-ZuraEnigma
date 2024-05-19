@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <!-- Header -->
     <header>
         <h1 class="main-title">KALKULATOR TRIGONOMETRI (BETA)</h1>
@@ -16,11 +17,11 @@
 
     <!-- Main Container -->
     <div class="container">
-        <div class="box">
+        <div class="box" id="luas-segitiga-section">
             <h1>TRIGO-CAL</h1>
             <div class="luas-segitiga">
                 <h2>LUAS SEGITIGA</h2>
-                <button type="button" class="switch-ks">KELILING SEGITIGA</button>
+                <button type="button" class="switch-ks" onclick="switchToKeliling()">KELILING SEGITIGA</button>
             </div>
             <div class="container-image">
                 <img src="https://cdn-web.ruangguru.com/landing-pages/assets/hs/gambar%20alas%20dan%20tinggi%20segitiga.png" alt="Segitiga">
@@ -49,7 +50,52 @@
                 <p id="hasilLuas">L = 1/2 x ... x ...</p>
                 <div class="button-group">
                     <button type="button" class="calculate-button" onclick="hitungLuas()">Hitung</button>
-                    <button type="reset" class="reset-button">Reset</button>
+                    <button type="button" class="reset-button" onclick="resetLuas()">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- -------PEMISAH--------------PEMISAH--------------PEMISAH--------------PEMISAH--------------PEMISAH--------------PEMISAH------- -->
+
+        <div class="box keliling-segitiga" id="keliling-segitiga-section" style="display:none;">
+            <h1>TRIGO-CAL</h1>
+            <div class="keliling-segitiga">
+                <h2>KELILING SEGITIGA</h2>
+                <button type="button" class="switch-ks" onclick="switchToLuas()">LUAS SEGITIGA</button>
+            </div>
+            <div class="container-image">
+                <img src="https://cdn-web.ruangguru.com/landing-pages/assets/hs/gambar%20alas%20dan%20tinggi%20segitiga.png" alt="Segitiga">
+            </div>
+            <p>Rumus Keliling Segitiga :</p>
+            <p class="formula"><b>K = a + b + c</b></p>
+            <details class="Keterangan">
+                <summary>Keterangan :</summary>
+                <li>K : Keliling Segitiga (cm)</li>
+                <li>a : Panjang Sisi a (cm)</li>
+                <li>b : Panjang Sisi b (cm)</li>
+                <li>c : Panjang Sisi c (cm)</li>
+            </details>
+            <hr>
+            <div class="calculation-section">
+                <h2><b>Hitung Keliling Segitiga</b></h2>
+                <div class="input-group">
+                    <label for="inputSisiA">Sisi a =</label>
+                    <input type="number" id="inputSisiA" name="inputSisiA" required/>
+                </div>
+                <div class="input-group">
+                    <label for="inputSisiB">Sisi b =</label>
+                    <input type="number" id="inputSisiB" name="inputSisiB" required/>
+                </div>
+                <div class="input-group">
+                    <label for="inputSisiC">Sisi c =</label>
+                    <input type="number" id="inputSisiC" name="inputSisiC" required/>
+                </div>
+                <p>Diketahui :</p>
+                <p id="rumusKeliling">K = a + b + c</p>
+                <p id="hasilKeliling">K = ... + ... + ...</p>
+                <div class="button-group">
+                    <button type="button" class="calculate-button" onclick="hitungKeliling()">Hitung</button>
+                    <button type="button" class="reset-button" onclick="resetKeliling()">Reset</button>
                 </div>
             </div>
         </div>
